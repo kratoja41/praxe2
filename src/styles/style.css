@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #005a70;
+}
+
+body {
+  background-color: #ccdde5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.logo-bar {
+  background-color: white;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+.login-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.main-logo {
+  max-width: 300px;
+  margin-bottom: 30px;
+  width: 600px;
+}
+
+.login-form {
+  background: none;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.toggle-visibility {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.forgot-password {
+  font-size: 13px;
+  color: #333;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.login-btn {
+  background-color: #cc004c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 60%;
+  align-self: center;
+}
+
+.divider {
+  text-align: center;
+  margin: 10px 0;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  background: #aaa;
+  position: absolute;
+  top: 50%;
+  width: 40%;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.divider span {
+  padding: 0 10px;
+  background: #ccdde5;
+}
+
+.create-account {
+  background-color: #005a70;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 70%;
+  align-self: center;
+}
+
+.existing-donor {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.existing-donor a {
+  text-decoration: underline;
+  color: #005a70;
+}
+
+.footer-img {
+  width: 160px;
+  margin: 20px auto;
+  display: block;
+  position: relative;
+  right: 250px;
+  top: 50px;
+}
+
+.red {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

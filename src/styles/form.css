@@ -1,0 +1,19 @@
+.login-form {
+  background: none;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.login-form label {
+  font-weight: bold;
+  font-size: 14px;
+}
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=form.css.map */

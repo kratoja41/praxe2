@@ -1,0 +1,27 @@
+.divider
+  text-align: center
+  margin: 10px 0
+  position: relative
+
+
+  &::before,
+  &::after
+    content: ""
+    height: 1px
+    background: #aaa
+    position: absolute
+    top: 50%
+    width: 40%
+
+
+  &::before
+    left: 0
+
+
+  &::after
+    right: 0
+
+
+  span
+    padding: 0 10px
+    background: #ccdde5
