@@ -6,6 +6,7 @@
   <title>Moje Amber Přihlášení</title>
   <link rel="stylesheet" href="src/styles/main.css">
   <link rel="icon" href="/image/logowdesktop.svg" type="image/svg+xml">
+
 </head>
 <body>
 <header>
@@ -19,10 +20,12 @@
 
   <form class="login-form">
     <label for="email">Email <span class="red">*</span></label>
-    <input type="email" id="email" placeholder="Zadejte Váš email" required>
+    <input type="text" id="email" placeholder="Zadejte Váš email">
+    <span id="emailError" class="error"></span>
 
     <label for="password">Heslo <span class="red">*</span></label>
-    <input type="password" id="password" placeholder="********" required>
+    <input type="password" id="password" placeholder="********">
+    <span id="passwordError" class="errorP"></span>
 
     <a href="#" class="forgot-password">Zapomenuté heslo</a>
 
@@ -40,9 +43,12 @@
     </p>
   </form>
 </main>
-
 <footer>
   <img src="image/handddropbig.svg" alt="Drop in hand" class="footer-img">
 </footer>
+
+<div id="error-container" class="error-container"></div>
+
+<script src="rj.js"></script>
 </body>
 </html>

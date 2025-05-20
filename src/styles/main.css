@@ -111,6 +111,27 @@ body {
   color: red;
 }
 
+.error-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.error-toast {
+  background-color: #f44336;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  animation: fadeOut 4s forwards;
+  min-width: 220px;
+}
+
 .divider {
   text-align: center;
   margin: 10px 0;
