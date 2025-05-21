@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
 
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 
@@ -64,4 +63,3 @@ document.addEventListener('DOMContentLoaded', () => {
             toast.remove();
         }, 2000);
     }
-});

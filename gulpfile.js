@@ -1,18 +1,16 @@
-// gulpfile.js
-const { src, dest, watch, series } = require('gulp');
+const { src, dest, watch } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
-const sourcemaps = require('gulp-sourcemaps');
 
-function compileSass() {
-    return src('src/styles/**/*.scss')
-        .pipe(sourcemaps.init())
+function buildSass() {
+    return src('src/styles/main.sass')
         .pipe(sass().on('error', sass.logError))
-        .pipe(sourcemaps.write('./'))
-        .pipe(dest('src/styles'));
+        .pipe(dest('dist/css'));
+
+}
+function watchSass() {
+    watch('src/styles/**/*.sass', buildSass);
 }
 
-function watchFiles() {
-    watch('src/styles/**/*.scss', compileSass);
-}
+exports.default = watchSass;
+exports.build = buildSass;
 
-exports.default = series(compileSass, watchFiles);

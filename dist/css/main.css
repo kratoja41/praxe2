@@ -1,0 +1,217 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --textcolor: #005a70;
+  --bkcMain: #ccdde5;
+  --bkcBC: #005a70;
+  --bkcBL: #cc004c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: var(--bkcMain);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.login-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.main-logo {
+  max-width: 300px;
+  margin-bottom: 30px;
+  width: 600px;
+}
+
+.toggle-visibility {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.forgot-password {
+  font-size: 13px;
+  color: #333;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.footer-img {
+  width: 160px;
+  margin: 20px auto;
+  display: block;
+  position: relative;
+  right: 250px;
+  top: 50px;
+}
+
+.red {
+  color: red;
+}
+
+.error-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.error-toast {
+  background-color: #f44336;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  animation: fadeOut 4s forwards;
+  min-width: 220px;
+}
+
+.divider {
+  text-align: center;
+  margin: 10px 0;
+  position: relative;
+}
+.divider::before, .divider::after {
+  content: "";
+  height: 1px;
+  background: #aaa;
+  position: absolute;
+  top: 50%;
+  width: 40%;
+}
+.divider::before {
+  left: 0;
+}
+.divider::after {
+  right: 0;
+}
+.divider span {
+  padding: 0 10px;
+  background: #ccdde5;
+}
+
+.login-form {
+  background: none;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.login-form label {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--textcolor);
+}
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.existing-donor {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+}
+.existing-donor a {
+  text-decoration: underline;
+  color: #005a70;
+}
+
+.btn {
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  align-self: center;
+  font-size: 16px;
+}
+.btn.login-btn {
+  background-color: var(--bkcBL);
+  padding: 10px 20px;
+  border-radius: 25px;
+  width: 60%;
+}
+.btn.create-account {
+  background-color: var(--bkcBC);
+  padding: 10px;
+  width: 70%;
+  align-self: center;
+}
+
+.logo-bar {
+  background-color: white;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.logo-bar img {
+  height: 40px;
+}
